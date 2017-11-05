@@ -1,4 +1,4 @@
-package com.fitbyte;
+package com.fitbyte.resources;
 
 import com.fitbyte.types.SleepData;
 
