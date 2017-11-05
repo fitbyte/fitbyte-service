@@ -9,12 +9,8 @@ import javax.ws.rs.core.MediaType;
 public class SleepResource {
     @POST
     @Consumes(MediaType.APPLICATION_JSON)
-    public void setSleepData(SleepData sleepData) {
-        if (sleepData != null) {
-            System.out.println("NumberOfHours " + sleepData.getNumberOfHours());
-            System.out.println("Quality " + sleepData.getQuality());
-        } else {
-            System.out.println("NULL REQUEST");
-        }
+    @Produces(MediaType.APPLICATION_JSON)
+    public SleepData setSleepData(SleepData sleepData) {
+        return sleepData;
     }
 }
